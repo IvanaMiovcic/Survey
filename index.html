@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Satisfaction Survey </title>
+      <link href="survey.css" rel="stylesheet" type="text/css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <main>
+        <h1> Pet Hotel Survey </h1>
+        <div class="form_background">
+          <h2> Please answer the following short survey about your recent experience with Paws Pet Hotel. </h2>
+            <form action="#" >
+              <div class="box">
+                <label  for="first-name"> First Name </label>
+                <input class="text" type="text" name="first name" id="first-name" placeholder="First Name" required>
+                <br>
+                <br>
+                <label for="last-name"> Last Name </label>
+                <input class="text" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                <br>
+                <br>
+                <label for="e-mail"> E-mail Address </label>
+                <input class="text" type="email" name="e-mail" id="e-mail" placeholder="E-mail Address" required>
+                <br>
+                <br>
+                <label for="age"> Pet's Age (if under 1 year, select 0)</label>
+                <input class="text" type="number" min="0" max="40" id="age" required>
+                <p> Pet Type</p>
+                <label for="dog">
+                <input class="radio" type="radio" name="pet-type" value="dog" id="dog" required>
+                Dog </label>
+                <br>
+                <br>
+                <label for="cat">
+                <input type="radio" class="radio" name="pet-type" value="cat" id="cat">
+                Cat </label>
+              </div>
+              <div class="box">
+                <label for="type"> What was your favorite feature of our pet boarding service? </label>
+                <select id="type" name="pet_type" required>
+                  <option disabled selected value> --Select an option-- </option>
+                  <option value="kennels"> Large Spacious Kennels </option>
+                  <option value="playtime"> One-on-one Daily Playtime </option>
+                  <option value="pheromones"> Pet-calming Pheromones </option>
+                  <option value="grooming"> On-site Grooming </option>
+                  <option value="pet-care"> 24/7 Pet Care </option>
+                  <option value="treats"> Complimentary Treats and Meals </option>
+                </select>
+                <p> How likely are you to reccomend us to a friend? <p>
+                  <label for="1">
+                  <input type="radio" class="radio" name="answer" value="very likely" id="1" required>
+                  Very Likely </label>
+                  <br>
+                  <br>
+                  <label for="2">
+                  <input type="radio" class="radio" name="answer" value="somewhat likely" id="2">
+                  Somewhat Likely </label>
+                  <br>
+                  <br>
+                  <label for="3">
+                  <input type="radio" class="radio" name="answer" value="somewhat unlikely" id="3">
+                  Somewhat Unlikely </label>
+                  <br>
+                  <br>
+                  <label for="4">
+                  <input type="radio" class="radio" name="answer" value="highly unlikely" id="4">
+                  Very Unlikely </label>
+                  <br>
+                  <br>
+                  <p> What would you like to see improved? (Check all that apply) </p>
+                  <br>
+                  <label for="beds">
+                  <input type="checkbox" class="checkbox" name="improve" value="beds" id="beds">
+                  Pet Beds </label>
+                  <br>
+                  <br>
+                  <label for="toys">
+                  <input type="checkbox" class="checkbox" name="improve" value="toys" id="toys">
+                  Toys </label>
+                  <br>
+                  <br>
+                  <label for="play">
+                  <input type="checkbox" class="checkbox" name="improve" value="playtime" id="play">
+                  Playtime and Activities </label>
+                  <br>
+                  <br>
+                  <label for="grooming">
+                  <input type="checkbox" class="checkbox" name="improve" value="grooming" id="grooming">
+                  Grooming Services </label>
+                  <br>
+                  <br>
+                  <label for="walks">
+                  <input type="checkbox" class="checkbox" name="improve" value="walks" id="walks">
+                  Daily Walks </label>
+                  <br>
+                  <br>
+                  <label for="meds">
+                  <input type="checkbox" class="checkbox" name="improve" value="meds" id="meds">
+                  Medication Dispensing </label>
+                  <br>
+                  <br>
+                  <label for="kennel">
+                  <input type="checkbox" class="checkbox" name="improve" value="kennel-size" id="kennel">
+                  Kennel Size </label>
+                  <br>
+                  <br>
+                  <label for="cleanliness">
+                  <input type="checkbox" class="checkbox" name="improve" value="cleanliness" id="cleanliness">
+                  Cleanliness </label>
+                  <br>
+                  <br>
+                  <label for="meals">
+                  <input type="checkbox" class="checkbox" name="improve" value="meals" id="meals">
+                  Meals and Treats </label>
+                </div>
+                <div class="container">
+                  <label for="comment"> Any comments or suggestions? </label>
+                  <br>
+                  <br>
+                  <textarea name="comments" id="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="sub_btn">
+                  <input type="submit" value="Submit" class="submit">
+                </div>
+              </div>
+            </form>
+        </div>
+      </main>
+    </body>
+  </html>
