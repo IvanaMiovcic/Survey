@@ -199,7 +199,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 699px) and (min-width: 351px) {
+@media only screen and (max-width: 699px) and (min-width: 450px) {
 
   input.text, select {
     height: 38px;
@@ -214,7 +214,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 449px) {
 
   .form_background {
     width: 90%;
@@ -225,7 +225,7 @@ textarea {
   }
 
   h1 {
-    line-height: 1.2em;
+    line-height: 1em;
   }
 
   .container {
