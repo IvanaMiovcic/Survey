@@ -223,4 +223,16 @@ textarea {
   form {
     width: 80%;
   }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+  
+  .sub_btn {
+    padding: 0 0 40px 0;
+  }
 }

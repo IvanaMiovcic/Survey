@@ -10,26 +10,26 @@
     </head>
     <body>
       <main>
-        <h1> Pet Hotel Survey </h1>
+        <h1 id="title"> Pet Hotel Survey </h1>
         <div class="form_background">
-          <h2> Please answer the following short survey about your recent experience with Paws Pet Hotel. </h2>
-            <form action="#" >
+          <h2 id="description"> Please answer the following short survey about your recent experience with Paws Pet Hotel. </h2>
+            <form id="survey-form" action="#" >
               <div class="box">
-                <label  for="first-name"> First Name </label>
-                <input class="text" type="text" name="first name" id="first-name" placeholder="First Name" required>
+                <label for="name" class="required" id="name-label"> First Name </label>
+                <input class="text" type="text" name="first name" id="name" placeholder="First Name" required>
                 <br>
                 <br>
-                <label for="last-name"> Last Name </label>
+                <label for="last-name" class="required"> Last Name </label>
                 <input class="text" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
                 <br>
                 <br>
-                <label for="e-mail"> E-mail Address </label>
-                <input class="text" type="email" name="e-mail" id="e-mail" placeholder="E-mail Address" required>
+                <label for="email" class="required" id="email-label"> E-mail Address </label>
+                <input class="text" type="email" name="email" id="email" placeholder="E-mail Address" required>
                 <br>
                 <br>
-                <label for="age"> Pet's Age (if under 1 year, select 0)</label>
-                <input class="text" type="number" min="0" max="40" id="age" required>
-                <p> Pet Type</p>
+                <label for="number" class="required" id="number-label"> Pet's Age (if under 1 year, select 0) </label>
+                <input class="text" type="number" min="0" max="40" id="number" required>
+                <p class="required"> Pet Type </p>
                 <label for="dog">
                 <input class="radio" type="radio" name="pet-type" value="dog" id="dog" required>
                 Dog </label>
@@ -40,8 +40,8 @@
                 Cat </label>
               </div>
               <div class="box">
-                <label for="type"> What was your favorite feature of our pet boarding service? </label>
-                <select id="type" name="pet_type" required>
+                <label for="dropdown" class="required"> What was your favorite feature of our pet boarding service? </label>
+                <select id="dropdown" name="pet_type" required>
                   <option disabled selected value> --Select an option-- </option>
                   <option value="kennels"> Large Spacious Kennels </option>
                   <option value="playtime"> One-on-one Daily Playtime </option>
@@ -50,7 +50,7 @@
                   <option value="pet-care"> 24/7 Pet Care </option>
                   <option value="treats"> Complimentary Treats and Meals </option>
                 </select>
-                <p> How likely are you to reccomend us to a friend? <p>
+                <p class="required"> How likely are you to reccomend us to a friend? <p>
                   <label for="1">
                   <input type="radio" class="radio" name="answer" value="very likely" id="1" required>
                   Very Likely </label>
@@ -124,7 +124,7 @@
                   <textarea name="comments" id="comment" placeholder="Enter your comment here..."></textarea>
                 </div>
                 <div class="sub_btn">
-                  <input type="submit" value="Submit" class="submit">
+                  <input type="submit" value="Submit" class="submit" id="submit">
                 </div>
               </div>
             </form>
