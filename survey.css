@@ -1,3 +1,7 @@
+* {
+  font-size: 18px;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -11,27 +15,27 @@ body {
 }
 
 h1 {
-  color: White;
+  color: white;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h2 {
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1rem;
   width: 80%;
-  margin: 3vh auto 0 auto;
+  margin: 19px auto 0 auto;
 }
 
 .form_background {
   width: min(60%, 1000px);
   height: auto;
   background-color: rgba(89, 89, 89, 0.9);
-  margin: 0 auto 8vh auto;
+  margin: 0 auto 52px auto;
   text-align: center;
   padding: 20px;
   border-radius: 15px;
@@ -48,8 +52,8 @@ form {
 input.text, select {
   font-family: 'Roboto', sans-serif;
   color: black;
-  font-size: 2.5vh;
-  height: 6vh;
+  font-size: 0.9rem;
+  height: 40px;
   width: 100%;
   border: none;
   border-radius: 5px;
@@ -61,16 +65,21 @@ label, p {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 1.5vw;
-  padding: 2vw 0 0 0;
+  font-size: 1rem;
+  padding: 20px 0 0 0;
+}
+
+.required::after {
+  content: '*';
 }
 
 input.radio {
-  width: 3vw;
+  width: 26px;
   font-family: 'Roboto', sans-serif;
-  height: 4vh;
+  height: 26px;
+  margin: 0px 14px;
   position: relative;
-  top: 10px;
+  top: 7px;
 }
 
 input.text:focus, textarea:focus {
@@ -85,8 +94,9 @@ select:focus {
 
 input.checkbox {
   font-family: 'Roboto', sans-serif;
-  width: 3vw;
-  height: 3.5vh;
+  width: 22px;
+  height: 22px;
+  margin: 0px 14px;
   position: relative;
   top: 5px;
 }
@@ -97,34 +107,33 @@ textarea {
   width: 100%;
   border: none;
   resize: vertical;
-  height: 20vh;
+  height: 140px;
   border-radius: 5px;
-  font-size: 2.5vh;
+  font-size: 0.9rem;
 }
 
 .container {
-  padding: 8vh 0;
+  padding: 56px 0;
 }
 
 .box {
-  padding: 5vw 0 0 0;
+  padding: 46px 0 0 0;
 }
 
 .sub_btn {
-  padding: 0 0 6vh 0;
+  padding: 0 0 46px 0;
 }
 
 .submit {
   display: block;
   margin: 0 auto;
   width: 50%;
-  height: 8vh;
+  height: 50px;
   border: none;
   background-color: white;
   color: rgb(89, 89, 89);
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 3vh;
 }
 
 .submit, input.checkbox, input.radio, select {
@@ -136,121 +145,54 @@ textarea {
 @media only screen and (min-width: 1600px) {
 
   input.text, select {
-    margin: 0.5vw 0 1.5vw 0;
-    font-size: 0.8vw;
-    height: 4vh;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 3.6rem;
   }
 
   h2 {
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
-  }
-
-  label, p {
-    font-size: 1vw;
-  }
-
-  input.radio {
-    height: 2.5vh;
-    width: 2.5vw;
-    top: 6px;
-  }
-
-  input.checkbox {
-    height: 2.5vh;
-    width: 2.5vw;
-  }
-
-  textarea {
-    font-size: 2vh;
+    font-size: 1.2rem;
   }
 
   .submit {
-    height: 6vh;
+    height: 60px;
     width: 40%;
-    font-size: 2vh;
+    font-size: 1.1rem;
     font-weight: 500;
   }
 
   .box{
-  padding-top: 5vh;
+  padding-top: 54px;
   }
 
   p {
-    padding-top: 1vw;
+    padding-top: 19px;
   }
 
   .container {
-    padding: 6vh 0;
+    padding: 54px 0;
   }
-
-  .form_background {
-    width: min(60%, 1800px);
-  }
-
 }
 
 /* formating for tabet and mobile devices */
 
 @media only screen and (max-width: 1050px) and (min-width: 700px) {
 
-  input.text, select {
-    height: 3vh;
-    font-size: 1.6vh;
-  }
-
-  input.radio {
-    height: 4vh;
-    width: 4vw;
-    top: 11px;
-  }
-
-  label, p {
-    font-size: 2vh;
-  }
-
   h1 {
-    font-size: 5vh;
+    font-size: 3.2rem;
   }
 
   h2 {
-    font-size: 2vh;
-  }
-
-  input.checkbox {
-    height: 4vh;
-    width: 4vw;
-    top: 11px;
-  }
-
-  textarea {
-    height: 15vh;
-    font-size: 1.6vh;
+    font-size: 1.1rem;
   }
 
   .submit {
     height: 6vh;
     font-size: 2vh;
-  }
-
-  .container {
-    padding: 4vh 0;
-  }
-
-  .sub_btn {
-    padding: 0 0 3vh 0;
-  }
-
-  .box {
-    padding: 7vh 0 0 0;
-  }
-
-  .container {
-    padding: 6.5vh 0;
-  }
-
-  .sub_btn {
-    padding: 0 0 6vh 0;
   }
 
 }
@@ -506,5 +448,4 @@ textarea {
   .sub_btn {
     padding: 0 0 6vh 0;
   }
-
 }
