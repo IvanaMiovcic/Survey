@@ -235,4 +235,7 @@ textarea {
   .sub_btn {
     padding: 0 0 40px 0;
   }
+  textarea, input.text {
+    width: 95%;
+  }
 }
