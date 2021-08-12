@@ -148,8 +148,7 @@ textarea {
   cursor: pointer;
 }
 
-/* formating for bigger screens */
-
+/* media queries for bigger screens */
 @media only screen and (min-width: 1600px) {
 
   input.text, select {
@@ -174,7 +173,7 @@ textarea {
   }
 
   .box{
-  padding-top: 54px;
+    padding-top: 54px;
   }
 
   p {
@@ -186,8 +185,7 @@ textarea {
   }
 }
 
-/* formating for tabet and mobile devices */
-
+/* media queries for tablet */
 @media only screen and (max-width: 1050px) and (min-width: 700px) {
 
   h1 {
@@ -203,6 +201,9 @@ textarea {
     font-size: 2vh;
   }
 
+  .form_background {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 699px) and (min-width: 450px) {
@@ -248,8 +249,9 @@ textarea {
     height: 4vh;
     font-size: 1.2vh;
   }
-
 }
+
+/* media queries for mobile devices */
 
 @media only screen and (max-width: 449px) {
 
@@ -318,7 +320,7 @@ textarea {
 
 }
 
-/* formating for tablet and mobile in landscape */
+/* media queries for tablet and mobile in landscape */
 
 @media only screen and (max-width: 1030px) and (min-width: 824px) and (orientation: landscape) {
 
@@ -373,11 +375,11 @@ textarea {
     }
 
     h1 {
-    font-size: 8vh;
+      font-size: 8vh;
     }
 
     h2 {
-    font-size: 3.5vh;
+      font-size: 3.5vh;
     }
 
     input.text, select {
